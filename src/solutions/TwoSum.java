@@ -1,4 +1,4 @@
-package problems.arrays;
+package solutions;
 
 public class TwoSum {
 
