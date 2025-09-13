@@ -1,21 +1,9 @@
 package solutions;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public class RomanToInteger {
 
     public int romanToInt(String s) {
-
-        Map<String, Integer> roman = new HashMap<>();
-
-        roman.put("I", 1);
-        roman.put("V", 5);
-        roman.put("X", 10);
-        roman.put("L", 50);
-        roman.put("C", 100);
-        roman.put("D", 500);
-        roman.put("M", 1000);
 
         int num = 0;
 
@@ -103,6 +91,7 @@ public class RomanToInteger {
         return num;
 
     }
+
 
     public static void main(String[] args) {
 
