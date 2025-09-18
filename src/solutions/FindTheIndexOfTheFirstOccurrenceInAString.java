@@ -4,21 +4,21 @@ public class FindTheIndexOfTheFirstOccurrenceInAString {
 
     public int strStr(String haystack, String needle) {
 
-        int m = haystack.length();
-        int n = needle.length();
+        int hLength = haystack.length();
+        int nLength = needle.length();
 
-        if (n == 0) return -1;
+        if (nLength == 0) return -1;
 
-        for (int i = 0; i <= m - n; i++) {
+        for (int i = 0; i <= hLength - nLength; i++) {
 
             int j = 0;
 
-            while (j < n && needle.charAt(j) == haystack.charAt(i + j)) {
+            while (j < nLength && needle.charAt(j) == haystack.charAt(i + j)) {
 
                 j++;
 
             }
-            if (j == n) {
+            if (j == nLength) {
 
                 return i;
             }
