@@ -10,7 +10,7 @@ public class AddTwoNumbers {
 
         while (l1 != null || l2 != null) {
 
-            int sum = (l1 != null ? l1.val : 0) + (l2 != null ? l2.val : 0);
+            int sum = (l1 != null ? l1.val : 0) + (l2 != null ? l2.val : 0) + carry;
 
             carry = sum / 10;
             int digit = sum % 10;
@@ -35,19 +35,19 @@ public class AddTwoNumbers {
 
     public static void main(String[] arg) {
 
-        ListNode val3 = new ListNode(2);
-        ListNode val2 = new ListNode(4, val3);
-        ListNode val1 = new ListNode(3, val2);
+        ListNode f1 = new ListNode(3);
+        ListNode f2 = new ListNode(4, f1);
+        ListNode f3 = new ListNode(2, f2);
 
-        ListNode val6 = new ListNode(5);
-        ListNode val5 = new ListNode(6, val6);
-        ListNode val4 = new ListNode(4, val5);
+        ListNode s1 = new ListNode(4);
+        ListNode s2 = new ListNode(6, s1);
+        ListNode s3 = new ListNode(5, s2);
 
         AddTwoNumbers t = new AddTwoNumbers();
 
-        System.out.println(t.addTwoNumbers(val3, val6).val);
-        System.out.println(t.addTwoNumbers(val3, val6).next.val);
-        System.out.println(t.addTwoNumbers(val3, val6).next.next);
+        System.out.println(t.addTwoNumbers(f3, s3).val);
+        System.out.println(t.addTwoNumbers(f3, s3).next.val);
+        System.out.println(t.addTwoNumbers(f3, s3).next.next.val);
 
     }
 }
