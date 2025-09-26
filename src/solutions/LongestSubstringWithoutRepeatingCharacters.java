@@ -6,8 +6,7 @@ import java.util.Set;
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {
-
-
+        
         Set<Character> set = new HashSet<>();
         int left = 0, maxLength = 0;
 
